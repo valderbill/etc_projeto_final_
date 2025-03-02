@@ -1,0 +1,153 @@
+/* Estilo geral da tabela */
+table {
+    font-size: 1.2rem;
+}
+
+/* Estilos para os preços no carrinho */
+.preco {
+    font-size: 1.6rem;  /* Aumentei o tamanho da fonte */
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;  /* Adicionando espaço superior */
+}
+
+/* Estilos da imagem dos produtos, deixando maior */
+.card img {
+    width: 100%;  /* A imagem vai ocupar 100% da largura do card */
+    height: 250px; /* Definimos uma altura fixa para a imagem */
+    object-fit: cover; /* A imagem vai cobrir a área definida sem distorcer */
+    display: block; /* Garante que a imagem ocupe o espaço de maneira correta */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+}
+
+/* Centraliza todo o conteúdo dentro do card */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente os elementos no centro */
+    align-items: center; /* Alinha horizontalmente os elementos no centro */
+    text-align: center; /* Garante que o texto dentro do card seja centralizado */
+}
+
+/* Botão de remoção */
+.btn-remove {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
+
+td, th {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.btn-actions {
+    text-align: center;
+}
+
+.btn-finalizar {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-finalizar:hover {
+    background-color: #218838;
+}
+
+/* Ajusta a largura dos cards e os organiza de forma responsiva */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;  /* Adicionando espaçamento entre os cards */
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Ajusta o layout para telas menores */
+.col-md-4, .col-sm-6 {
+    display: flex;
+    justify-content: center; /* Centraliza os cards dentro do grid */
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 0.5px 0;      /* Reduziu o padding do rodapé */
+    text-align: center;
+    font-size: 15px;       /* Reduziu o tamanho da fonte */
+    color: #72ec15;
+    position: fixed;       /* Fixa o rodapé na parte inferior */
+    bottom: 0;             /* Alinha o rodapé na parte inferior da tela */
+    width: 100%;           /* Garantir que o rodapé ocupe toda a largura */
+    left: 0;               /* Garante que fique alinhado à esquerda */
+    z-index: 999;          /* Garante que o rodapé fique acima do conteúdo */
+}
+
+/* Centralizar o texto no rodapé */
+footer p {
+    margin: 0;
+    padding: 3px 0;        /* Reduziu o padding do texto */
+}
+
+/* Ajustes gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;     /* Garante que o corpo tenha pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste para o conteúdo principal não ficar sobrepondo o rodapé */
+main {
+    flex: 1;               /* Faz o conteúdo principal ocupar o espaço restante */
+    padding-bottom: 60px;  /* Dá espaço para o rodapé fixo */
+}
+
+/* Ajuste específico para o carrossel */
+.carousel {
+    height: calc(100vh - 60px); /* Faz o carrossel ocupar o espaço disponível até o rodapé */
+    overflow: hidden;           /* Evita que o conteúdo extra do carrossel apareça */
+}
+
+/* Ajustes adicionais para o layout */
+html, body {
+    height: 100%;
+}
+
+/* Estilo do container principal para garantir um bom alinhamento */
+.container {
+    width: 100%;
+    max-width: 1200px;        /* Ajuste conforme o seu design */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Exemplo de estilo para o conteúdo */
+section {
+    margin: 20px 0;
+}
+
+/* Estilo de título para as seções */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}

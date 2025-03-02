@@ -1,0 +1,123 @@
+/* Ajustar as imagens do carrossel para se ajustarem ao tamanho da página */
+.carousel-inner img {
+    width: 100%;            /* A imagem ocupa toda a largura disponível */
+    height: 100%;           /* Ajusta a altura automaticamente para manter a proporção da imagem */
+    object-fit: contain;    /* A imagem se ajusta dentro do contêiner sem distorcer ou cortar */
+    display: block;         /* Remove o espaço extra abaixo da imagem */
+    margin: 0 auto;         /* Centraliza a imagem */
+    max-height: 600px;      /* Limita a altura máxima para evitar que a imagem fique muito grande */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 0.5px 0;          /* Reduziu o padding do rodapé */
+    text-align: center;
+    font-size: 15px;          /* Reduziu o tamanho da fonte */
+    color: #856eec;
+    position: fixed;          /* Fixa o rodapé na parte inferior */
+    bottom: 0;                /* Alinha o rodapé na parte inferior da tela */
+    width: 100%;              /* Garantir que o rodapé ocupe toda a largura */
+    left: 0;                  /* Garante que fique alinhado à esquerda */
+    z-index: 999;             /* Garante que o rodapé fique acima do conteúdo */
+}
+
+/* Centraliza o texto no rodapé */
+footer p {
+    margin: 0;
+    padding: 3px 0;           /* Reduziu o padding do texto */
+}
+
+/* Ajustes gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;        /* Garante que o corpo tenha pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste para o conteúdo principal não ficar sobrepondo o rodapé */
+main {
+    flex: 1;                  /* Faz o conteúdo principal ocupar o espaço restante */
+    padding-bottom: 60px;     /* Dá espaço para o rodapé fixo */
+}
+
+/* Ajuste específico para o carrossel */
+.carousel {
+    height: calc(100vh - 60px); /* Faz o carrossel ocupar o espaço disponível até o rodapé */
+    overflow: hidden;           /* Evita que o conteúdo extra do carrossel apareça */
+}
+
+/* Ajustes adicionais para o layout */
+html, body {
+    height: 100%;
+}
+
+/* Estilo do container principal para garantir um bom alinhamento */
+.container {
+    width: 100%;
+    max-width: 1200px;        /* Ajuste conforme o seu design */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Exemplo de estilo para o conteúdo */
+section {
+    margin: 20px 0;
+}
+
+/* Estilo de título para as seções */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para os preços no carrinho */
+.preco {
+    font-size: 1.6rem;  /* Aumentei o tamanho da fonte */
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;  /* Adicionando espaço superior */
+}
+
+/* Ajuste para os cards para ficarem do mesmo tamanho */
+.card {
+    width: 100%;            /* Garante que o card ocupe toda a largura disponível */
+    max-width: 300px;       /* Limita a largura máxima do card */
+    height: 450px;          /* Altura fixa para os cards */
+    margin: 10px auto;      /* Adiciona espaçamento entre os cards e centraliza */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: space-between; /* Garante que o conteúdo dentro do card seja distribuído */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões do card */
+}
+
+/* Estilos da imagem dos produtos dentro do card */
+.card img {
+    width: 100%;            /* A imagem vai ocupar 100% da largura do card */
+    height: 250px;          /* Definimos uma altura fixa para a imagem */
+    object-fit: contain;    /* A imagem vai se ajustar dentro da área do card sem cortar */
+    display: block;         /* Garante que a imagem ocupe o espaço de maneira correta */
+    margin: 0 auto;         /* Centraliza a imagem dentro do card */
+}
+
+/* Centraliza todo o conteúdo dentro do card */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo do card */
+    align-items: center; /* Alinha horizontalmente os elementos no centro */
+    text-align: center; /* Garante que o texto dentro do card seja centralizado */
+    padding: 15px; /* Adiciona padding ao redor do conteúdo do card */
+    flex-grow: 1; /* Garante que o conteúdo ocupe o restante do espaço disponível dentro do card */
+}
+
+/* Ajustes para garantir que todos os cards se alinhem de forma consistente */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Espaça igualmente os cards */
+    gap: 20px;  /* Adiciona espaço entre os cards */
+}

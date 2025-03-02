@@ -1,0 +1,43 @@
+
+
+.nav-links {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+}
+
+#opcoesCadastro {
+    margin-right: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.category-section {
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar .ml-auto {
+    display: flex;
+    justify-content: flex-end;
+}

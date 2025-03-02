@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.nota-fiscal {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nota-fiscal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.nota-fiscal table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.nota-fiscal table th, .nota-fiscal table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.nota-fiscal table th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.nota-fiscal .total {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 2px;
+    text-align: right;
+    color: #e74c3c;
+}
+
+.nota-fiscal .header {
+    display: flex;
+    justify-content: space-between; /* Alinha a imagem à esquerda e o texto à direita */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nota-fiscal .header img {
+    height: 60px;
+    max-width: 100%;
+}
+
+.nota-fiscal .nota-fiscal-title {
+    margin: 0;
+    color: #34495e;
+    font-size: 1.8rem;
+}
+
+.company-info {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.company-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.company-address {
+    font-size: 0.9rem; /* Reduzi o tamanho da fonte do endereço */
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.nota-fiscal .container-info {
+    margin-top: 20px;
+}
+
+.nota-fiscal .container-info h3 {
+    color: #2c3e50;
+}
+
+.nota-fiscal .container-info table {
+    margin-top: 10px;
+}
